@@ -47,7 +47,7 @@ def generate_qrcode(url):
 main_image = Image.open('static/main_banner.png')
 
 st.image(main_image,use_column_width='auto')
-st.title("GDSC BPDC QR Code Generator")
+st.title("GDSC BPDC QR Code Generator.")
 url = st.text_input("Enter your URL please")
 if url is not None and url != "":
     with st.spinner(f"Generating the QR Code..."):
